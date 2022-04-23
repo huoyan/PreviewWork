@@ -33,6 +33,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 进行可变字符串的视图显示
+ */
 public class ApannableStringActivity extends AppCompatActivity {
 
     @BindView(R.id.text1)

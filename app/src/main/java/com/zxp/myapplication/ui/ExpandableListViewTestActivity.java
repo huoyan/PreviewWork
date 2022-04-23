@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.zxp.myapplication.R;
 
+/**
+ * 评论回复布局方式
+ */
 public class ExpandableListViewTestActivity extends AppCompatActivity {
 
     @Override
