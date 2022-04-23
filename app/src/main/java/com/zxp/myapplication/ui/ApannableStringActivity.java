@@ -33,6 +33,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 可变字符串测试页面
+ */
 public class ApannableStringActivity extends AppCompatActivity {
 
     @BindView(R.id.text1)
