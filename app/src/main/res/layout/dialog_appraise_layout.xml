@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/sise20"
+    android:background="@drawable/appraise_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/sise20"
+    app:layout_constraintBottom_toBottomOf="parent">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="请评价"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_sub_title"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cancel_button"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="@dimen/sise15"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/RadingStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:isIndicator="true"
+        android:max="5"
+        android:numStars="5"
+        android:rating="1.0"
+        android:stepSize="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title">
+
+    </RatingBar>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="一般"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size_describe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rating_bar" />
+
+    <LinearLayout
+        android:id="@+id/conten_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sise20"
+        android:layout_marginRight="@dimen/sise20"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/content">
+
+            <TextView
+                android:id="@+id/content_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/article_pic_radius"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textSize="@dimen/text_size_describe"
+                android:background="@drawable/appraise_content_gray_bg"
+                android:gravity="center"
+                android:padding="@dimen/article_pic_radius"
+                android:text="服务很满意"></TextView>
+
+            <TextView
+                android:id="@+id/content_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/article_pic_radius"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textSize="@dimen/text_size_describe"
+                android:background="@drawable/appraise_content_gray_bg"
+                android:gravity="center"
+                android:padding="@dimen/article_pic_radius"
+                android:text="服务很满意"></TextView>
+
+            <TextView
+                android:id="@+id/content_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/article_pic_radius"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textSize="@dimen/text_size_describe"
+                android:background="@drawable/appraise_content_gray_bg"
+                android:gravity="center"
+                android:padding="@dimen/article_pic_radius"
+                android:text="服务很满意"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/content">
+
+            <TextView
+                android:id="@+id/content_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/article_pic_radius"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textSize="@dimen/text_size_describe"
+                android:background="@drawable/appraise_content_gray_bg"
+                android:gravity="center"
+                android:padding="@dimen/article_pic_radius"
+                android:text="服务很满意"></TextView>
+
+            <TextView
+                android:id="@+id/content_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/article_pic_radius"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textSize="@dimen/text_size_describe"
+                android:background="@drawable/appraise_content_gray_bg"
+                android:gravity="center"
+                android:padding="@dimen/article_pic_radius"
+                android:text="服务很满意"></TextView>
+
+            <TextView
+                android:id="@+id/content_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/article_pic_radius"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:textSize="@dimen/text_size_describe"
+                android:background="@drawable/appraise_content_gray_bg"
+                android:gravity="center"
+                android:padding="@dimen/article_pic_radius"
+                android:text="服务很满意"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sise25"
+        android:layout_marginTop="@dimen/sise10"
+        android:layout_marginRight="@dimen/sise25"
+        android:layout_marginBottom="@dimen/sise20"
+        android:layout_weight="1"
+        android:clickable="true"
+        android:background="@drawable/appraise_content_gray_bg"
+        android:gravity="center"
+        android:padding="@dimen/sise10"
+        android:text="提交评价"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/conten_layout"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/orange</color>
+    <color name="colorPrimaryDark">@color/white</color>
+    <color name="colorAccent">@color/main_color</color>
+
+
+    <color name="main_color">#00A7F5</color>
+
+    <color name="white">#FDFDFD</color>
+    <color name="blue">#124479</color>
+    <color name="orange">#E35422</color>
+    <color name="gray">#748087</color>
+    <color name="gray_999999">#999999</color>
+    <color name="gray_9">#99999999</color>
+    <color name="yellow">#FF7325</color>
+
+    <color name="main_bg">#FDFDFD</color>
+
+    <color name="line_color">#e3e5e9</color>
+
+    <!--    字体颜色-->
+    <color name="text_black">#333333</color>
+    <color name="text_red">#FF0000</color>
+    <color name="text_gray">#999999</color>
+    <color name="text_ccc">#CCCCCC</color>
+
+    <!-- 个人中心顶部-->
+    <color name="half_white">#55aaaaaa</color>
+
+
+    <color name="commom_background">#f3f3f3</color>
+
+
+</resources>

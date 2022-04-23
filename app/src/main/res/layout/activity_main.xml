@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sslsjl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="搜索历史显示功能"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/app_set"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App权限设置页面"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sslsjl" />
+    <TextView
+        android:id="@+id/apannable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spannable页面"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_set" />
+    <TextView
+        android:id="@+id/to_popup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="popup小弹窗"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/apannable" />
+    <TextView
+        android:id="@+id/to_ck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="车控界面"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_popup"
+        app:layout_constraintTop_toBottomOf="@id/apannable" />
+    <TextView
+        android:id="@+id/to_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="评分界面"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/to_ck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

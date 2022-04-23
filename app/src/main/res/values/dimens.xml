@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="sise5">5dp</dimen>
+    <dimen name="sise10">10dp</dimen>
+    <dimen name="sise15">15dp</dimen>
+    <dimen name="sise20">20dp</dimen>
+    <dimen name="sise25">25dp</dimen>
+    <dimen name="title_bar_height">55dp</dimen>
+    <dimen name="tab_layout_height">42dp</dimen>
+
+    <dimen name="margin_border_lr">12dp</dimen>
+    <dimen name="margin_border_tb">14dp</dimen>
+
+    <dimen name="padding_border_lr">10dp</dimen>
+    <dimen name="padding_border_tb">10dp</dimen>
+
+    <dimen name="login_btn_height">50dp</dimen>
+
+    <!--    字体大小-->
+    <dimen name="text_size_big">30dp</dimen>
+    <dimen name="text_size_big_title">26dp</dimen>
+    <dimen name="text_size_tab_title">22dp</dimen>
+    <dimen name="text_size_title">20dp</dimen>
+    <dimen name="text_size_sub_title">16dp</dimen>
+    <dimen name="text_size_describe">14dp</dimen>
+    <dimen name="text_size_small">12dp</dimen>
+
+    <dimen name="line_spacing_multiplier">4dp</dimen>
+
+
+    <!--    文章图片间距-->
+    <dimen name="article_pic_space">4dp</dimen>
+    <!--文章图片圆角-->
+    <dimen name="article_pic_radius">4dp</dimen>
+
+
+    <dimen name="toolbar_size_easy_photos">@dimen/title_bar_height</dimen>
+
+</resources>
