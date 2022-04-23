@@ -5,7 +5,9 @@ import android.app.Application;
 import com.growingio.android.sdk.collection.Configuration;
 import com.growingio.android.sdk.collection.GrowingIO;
 
-
+/**
+ * App
+ */
 public class AppApplication extends BaApp {
 
     protected static AppApplication application;
