@@ -21,6 +21,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/**
+ * 主页面
+ */
 public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.sslsjl)
