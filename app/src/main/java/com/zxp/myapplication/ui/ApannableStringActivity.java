@@ -34,7 +34,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 /**
- * 可变字符串测试页面
+ * 进行可变字符串的视图显示
  */
 public class ApannableStringActivity extends AppCompatActivity {
 
