@@ -51,6 +51,14 @@
         app:layout_constraintLeft_toRightOf="@id/to_popup"
         app:layout_constraintTop_toBottomOf="@id/apannable" />
     <TextView
+        android:id="@+id/to_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="渐变背景"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_ck"
+        app:layout_constraintTop_toBottomOf="@id/apannable" />
+    <TextView
         android:id="@+id/to_rating_bar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

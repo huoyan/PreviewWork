@@ -15,7 +15,7 @@ import com.zxp.myapplication.util.UiUtil;
 
 
 /**
- * 选择去导航弹框
+ * 弹出评价框
  */
 public class AppraiseRatingBarDialog2 extends PopupWindow {
     private static final String TAG = "PhotoPopupWindow";

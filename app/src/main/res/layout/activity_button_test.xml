@@ -6,4 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".ui.ButtonTestActivity">
 
+    <com.zxp.myapplication.view.RedTipTextView
+        android:id="@+id/test1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:padding="@dimen/dp_15"
+        android:text="测试文克里斯丁垃圾分类看了科技大厦莲富大厦了开始结阿道夫两三点了甲氨蝶呤副科级鲁大师字"
+        app:redTipsVisibility="visible"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+    </com.zxp.myapplication.view.RedTipTextView>
+
+    <EditText
+        android:id="@+id/edit1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/test1">
+    </EditText>
+
+    <TextView
+        android:id="@+id/button1"
+        android:padding="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:background="@drawable/jianbian_bg"
+        android:gravity="center"
+        android:textSize="@dimen/dp_15"
+        android:textColor="@color/white"
+        android:text="测试"
+        app:layout_constraintTop_toBottomOf="@id/edit1">
+    </TextView>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

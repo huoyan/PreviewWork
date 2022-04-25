@@ -5,21 +5,24 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
-
     <application
+        android:name=".AppApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:name=".AppApplication"
+        android:label="@string/app_name_1"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
         android:theme="@style/AppTheme"
-        tools:replace="android:name">
+        android:usesCleartextTraffic="true"
+        tools:replace="android:label,android:name">
+
+        <activity
+            android:name=".ui.ButtonTestActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.RatingBarTestActivity"
             android:exported="false" />
@@ -34,7 +37,8 @@
             android:exported="false" />
         <activity android:name=".ui.ApannableStringActivity" />
         <activity android:name=".ui.TestZFlowActivity" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -42,13 +46,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
             <intent-filter>
-                <data android:scheme="growing.57b43c3cb5f2d6dd"/>
+                <data android:scheme="growing.57b43c3cb5f2d6dd" />
+
                 <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
             </intent-filter>
-
         </activity>
     </application>
 

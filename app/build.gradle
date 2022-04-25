@@ -95,7 +95,7 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
     //使用埋点包
     implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.0'
-///////////////////////
+//-----------------------------------
     //车控的
     implementation 'com.google.code.gson:gson:2.8.6'
     //添加必要依赖
