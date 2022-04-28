@@ -76,9 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             }
             case R.id.to_ck: {
-                Intent intent=new Intent();
-                intent.setComponent(new ComponentName(this, cn.com.changan.nev.MainActivity.class));
-                startActivity(intent);
+
                 break;
             }
             case R.id.to_cjs: {

@@ -40,12 +40,3 @@
 -keep class androidx.viewpager.widget.ViewPager$**{
   *;
 }
-
-#车控部分
--keep class cn.sharesdk.**{*;}
--keep class com.sina.**{*;}
--keep class com.mob.**{*;}
--keep class com.bytedance.**{*;}
--dontwarn cn.sharesdk.**
--dontwarn com.sina.**
--dontwarn com.mob.**

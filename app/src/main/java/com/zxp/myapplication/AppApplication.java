@@ -4,9 +4,10 @@ import android.app.Application;
 
 import com.growingio.android.sdk.collection.Configuration;
 import com.growingio.android.sdk.collection.GrowingIO;
+import com.growingio.android.sdk.status.BuildConfig;
 
 
-public class AppApplication extends BaApp {
+public class AppApplication extends Application {
 
     protected static AppApplication application;
 
