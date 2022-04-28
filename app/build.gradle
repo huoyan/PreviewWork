@@ -95,8 +95,8 @@ dependencies {
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
     //使用埋点包
     implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.0'
-//-----------------------------------
-    //车控的
+
+//--------------车控---------------------
     implementation 'com.google.code.gson:gson:2.8.6'
     //添加必要依赖
     implementation"com.squareup.retrofit2:retrofit:2.4.0"
@@ -119,7 +119,7 @@ dependencies {
 //    implementation 'com.tencent.liteav:LiteAVSDK_TRTC:latest.release'
 
     implementation 'com.github.hotchemi:permissionsdispatcher:3.1.0'
-
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:3.1.0'
     implementation 'org.xutils:xutils:3.8.4'
     implementation 'androidx.multidex:multidex:2.0.0'
 

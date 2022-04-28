@@ -7,6 +7,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.zxp.myapplication.R;
+import com.zxp.myapplication.view.RedTipTextView;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -18,11 +19,13 @@ import butterknife.OnClick;
 public class ButtonTestActivity extends AppCompatActivity {
 
     @BindView(R.id.test1)
-    TextView test1;
+    RedTipTextView test1;
     @BindView(R.id.button1)
     TextView button1;
     @BindView(R.id.edit1)
     TextView edit1;
+
+    private int i = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +39,8 @@ public class ButtonTestActivity extends AppCompatActivity {
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.button1: {
+                i++;
+                test1.setVisibility(i / 2);
                 test1.setText(edit1.getText());
                 break;
             }

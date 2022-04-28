@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.zxp.myapplication.R;
 import com.zxp.myapplication.util.KeyBoardUtils;
 import com.zxp.myapplication.util.SPUtils;
+import com.zxp.myapplication.view.ClearEditText;
 import com.zxp.myapplication.view.ZFlowLayout;
 
 import butterknife.BindView;
@@ -24,7 +24,7 @@ import butterknife.OnClick;
 public class TestZFlowActivity extends AppCompatActivity {
 
     @BindView(R.id.autoSearch)
-    EditText autoSearch;
+    ClearEditText autoSearch;
     @BindView(R.id.button_search)
     Button buttonSearch;
     @BindView(R.id.history_fl)

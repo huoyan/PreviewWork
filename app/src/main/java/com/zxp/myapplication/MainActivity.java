@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.growingio.android.sdk.collection.GrowingIO;
 import com.zxp.myapplication.ui.ApannableStringActivity;
 import com.zxp.myapplication.ui.ButtonTestActivity;
+import com.zxp.myapplication.ui.CjsTestActivity;
 import com.zxp.myapplication.ui.PopUpTestActivity;
 import com.zxp.myapplication.ui.RatingBarTestActivity;
 import com.zxp.myapplication.ui.TestZFlowActivity;
@@ -37,6 +38,8 @@ public class MainActivity extends AppCompatActivity {
     TextView toCk;
     @BindView(R.id.to_button)
     TextView toButton;
+    @BindView(R.id.to_cjs)
+    TextView toCjs;
     @BindView(R.id.to_rating_bar)
     TextView toRatingBar;
 
@@ -49,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         GrowingIO.getInstance().setPageName(this, "MainActivity");
     }
 
-    @OnClick({R.id.sslsjl, R.id.app_set, R.id.apannable, R.id.to_popup, R.id.to_ck, R.id.to_button, R.id.to_rating_bar})
+    @OnClick({R.id.sslsjl, R.id.app_set, R.id.apannable, R.id.to_popup, R.id.to_ck, R.id.to_cjs, R.id.to_button, R.id.to_rating_bar})
     public void onViewClicked(View view) {
 
         switch (view.getId()) {
@@ -75,6 +78,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.to_ck: {
                 Intent intent=new Intent();
                 intent.setComponent(new ComponentName(this, cn.com.changan.nev.MainActivity.class));
+                startActivity(intent);
+                break;
+            }
+            case R.id.to_cjs: {
+                Intent intent=new Intent();
+                intent.setClass(this, CjsTestActivity.class);
                 startActivity(intent);
                 break;
             }
