@@ -2,43 +2,43 @@ apply plugin: 'com.android.application'
 //埋点
 apply plugin: 'com.growingio.android'
 //mob的
-apply plugin: 'com.mob.sdk'
+//apply plugin: 'com.mob.sdk'
 
-MobSDK {
-    appKey "7ea80e75d600"
-    appSecret "替换为mob官方申请的appkey对应的appSecret"
-    ShareSDK {
-        loopShare false
-        devInfo {
-            Wechat {
-                /* appId "wx34d03c61d0a4410b"
-                 appSecret "342172215859a247098004ec178a03b7"
-                 userName "gh_afb25ac019c9"
-                 path "pages/index/index.html?id=1"
-                 withShareTicket true
-                 miniprogramType 2
-                 sortId 1*/
-            }
-            WechatMoments {
-                /*appId "wx34d03c61d0a4410b"
-                appSecret "342172215859a247098004ec178a03b7"
-                sortId 2*/
-            }
-            QQ {
-                /*appId "101546162"
-                appKey "e5c34c7ed99b9330fba985dc02718953"
-                sortId 3*/
-
-            }
-            QZone {
-                /*appId "101546162"
-                appKey "e5c34c7ed99b9330fba985dc02718953"
-                sortId 4*/
-
-            }
-        }
-    }
-}
+//MobSDK {
+//    appKey "7ea80e75d600"
+//    appSecret "替换为mob官方申请的appkey对应的appSecret"
+//    ShareSDK {
+//        loopShare false
+//        devInfo {
+//            Wechat {
+//                /* appId "wx34d03c61d0a4410b"
+//                 appSecret "342172215859a247098004ec178a03b7"
+//                 userName "gh_afb25ac019c9"
+//                 path "pages/index/index.html?id=1"
+//                 withShareTicket true
+//                 miniprogramType 2
+//                 sortId 1*/
+//            }
+//            WechatMoments {
+//                /*appId "wx34d03c61d0a4410b"
+//                appSecret "342172215859a247098004ec178a03b7"
+//                sortId 2*/
+//            }
+//            QQ {
+//                /*appId "101546162"
+//                appKey "e5c34c7ed99b9330fba985dc02718953"
+//                sortId 3*/
+//
+//            }
+//            QZone {
+//                /*appId "101546162"
+//                appKey "e5c34c7ed99b9330fba985dc02718953"
+//                sortId 4*/
+//
+//            }
+//        }
+//    }
+//}
 android {
     compileSdkVersion 29
 
@@ -96,5 +96,6 @@ dependencies {
     //使用埋点包
     implementation 'com.growingio.android:vds-android-agent:autotrack-2.9.0'
 
-
+    //// 华为二维码扫描
+    implementation 'com.huawei.hms:scan:1.3.0.300'
 }

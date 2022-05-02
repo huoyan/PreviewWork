@@ -22,9 +22,9 @@ buildscript {
         classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.0'
 
         // 注册MobSDK
-        classpath "com.mob.sdk:MobSDK:2018.0319.1724"
+//        classpath "com.mob.sdk:MobSDK:2018.0319.1724"
         // 腾讯云
-        classpath "com.tencent.android.tpns:tpnsplugin:1.2.0"
+//        classpath "com.tencent.android.tpns:tpnsplugin:1.2.0"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

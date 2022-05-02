@@ -9,6 +9,16 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
+    <!--相机权限-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!--读文件权限-->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--使用特性-->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <!--震动权限-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:name=".AppApplication"
         android:allowBackup="true"
@@ -39,6 +49,13 @@
             android:exported="false" />
         <activity android:name=".ui.ApannableStringActivity" />
         <activity android:name=".ui.TestZFlowActivity" />
+
+        <!--        自定义扫码界面-->
+        <activity
+            android:name=".ui.ScanQrActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

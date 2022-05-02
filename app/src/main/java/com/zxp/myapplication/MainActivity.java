@@ -1,12 +1,16 @@
 package com.zxp.myapplication;
 
+import android.Manifest;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
 
 import com.growingio.android.sdk.collection.GrowingIO;
 import com.zxp.myapplication.ui.ApannableStringActivity;
@@ -14,6 +18,7 @@ import com.zxp.myapplication.ui.ButtonTestActivity;
 import com.zxp.myapplication.ui.CjsTestActivity;
 import com.zxp.myapplication.ui.PopUpTestActivity;
 import com.zxp.myapplication.ui.RatingBarTestActivity;
+import com.zxp.myapplication.ui.ScanQrActivity;
 import com.zxp.myapplication.ui.TestZFlowActivity;
 import com.zxp.myapplication.util.SystemUtils;
 
@@ -25,7 +30,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
-
+    public static int REQUEST_CODE = 0x11;
     @BindView(R.id.sslsjl)
     TextView sslsjl;
     @BindView(R.id.app_set)
@@ -40,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
     TextView toButton;
     @BindView(R.id.to_cjs)
     TextView toCjs;
+    @BindView(R.id.to_saoyisao)
+    TextView toSaoyisao;
     @BindView(R.id.to_rating_bar)
     TextView toRatingBar;
 
@@ -52,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         GrowingIO.getInstance().setPageName(this, "MainActivity");
     }
 
-    @OnClick({R.id.sslsjl, R.id.app_set, R.id.apannable, R.id.to_popup, R.id.to_ck, R.id.to_cjs, R.id.to_button, R.id.to_rating_bar})
+    @OnClick({R.id.sslsjl, R.id.app_set, R.id.apannable, R.id.to_popup, R.id.to_ck, R.id.to_cjs,R.id.to_saoyisao, R.id.to_button, R.id.to_rating_bar})
     public void onViewClicked(View view) {
 
         switch (view.getId()) {
@@ -85,6 +92,15 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
             }
+            case R.id.to_saoyisao: {
+                //申请权限
+                ActivityCompat.requestPermissions(
+                        MainActivity.this,
+                        new String[]{Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE},
+                        REQUEST_CODE);
+
+                break;
+            }
             case R.id.to_button: {
                 Intent intent=new Intent();
                 intent.setComponent(new ComponentName(this, ButtonTestActivity.class));
@@ -106,6 +122,44 @@ public class MainActivity extends AppCompatActivity {
                 }
                 GrowingIO.getInstance().track("ceshi",jsonObject);
                 break;
+            }
+        }
+    }
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        if (permissions == null || grantResults == null) {
+            return;
+        }
+        if (grantResults.length < 2 || grantResults[0] != PackageManager.PERMISSION_GRANTED || grantResults[1] != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        if (requestCode == REQUEST_CODE) {
+            //权限申请成功，跳转到自定义扫码页面
+            Intent intent = new Intent(MainActivity.this, ScanQrActivity.class);
+
+            startActivityForResult(intent, REQUEST_CODE);
+        }
+    }
+
+    //     处理扫码结果
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == REQUEST_CODE) {
+            //处理扫描结果
+            if (null != data) {
+                Bundle bundle = data.getExtras();
+                if (bundle == null) {
+                    return;
+                }
+                if (bundle.getInt("result_type") == 1) {
+                    String result = bundle.getString("result_string");
+                    Log.e("扫描结果" , "result:"+result);
+
+                } else if (bundle.getInt("result_type") == 2) {
+                    Log.e("扫描结果" , "扫描失败:");
+                }
             }
         }
     }
