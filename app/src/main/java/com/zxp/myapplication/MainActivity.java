@@ -159,7 +159,6 @@ public class MainActivity extends AppCompatActivity {
 
                 } else if (bundle.getInt("result_type") == 2) {
                     Log.e("扫描结果" , "扫描失败:");
-
                 }
             }
         }
