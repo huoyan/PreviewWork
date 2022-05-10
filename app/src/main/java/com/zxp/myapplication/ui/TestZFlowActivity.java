@@ -1,8 +1,10 @@
 package com.zxp.myapplication.ui;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -35,6 +37,11 @@ public class TestZFlowActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_test_z_flow);
         ButterKnife.bind(this);
+        autoSearch.setFocusable(true);
+        autoSearch.setFocusableInTouchMode(true);
+        autoSearch.requestFocus();
+        InputMethodManager inputManager = (InputMethodManager)autoSearch.getContext().getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputManager.showSoftInput(autoSearch, 0);
     }
 
     @OnClick(R.id.button_search)
@@ -103,6 +110,14 @@ public class TestZFlowActivity extends AppCompatActivity {
             });
             // initautoSearch();
         }
+    }
+
+    public void tuichu(View view){
+        autoSearch.setText("");
+        autoSearch.clearFocus();
+        InputMethodManager imm = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
+        imm.hideSoftInputFromWindow(autoSearch.getWindowToken(), 0);
+        finish();
     }
 
 }

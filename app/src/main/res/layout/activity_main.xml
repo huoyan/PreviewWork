@@ -81,7 +81,31 @@
         android:text="评分界面"
         android:padding="10dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/to_ck" />
+    <TextView
+        android:id="@+id/to_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="switch"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_rating_bar"
+        app:layout_constraintTop_toBottomOf="@id/to_ck" />
+    <TextView
+        android:id="@+id/to_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进度条"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_switch"
+        app:layout_constraintTop_toBottomOf="@id/to_ck" />
+    <TextView
+        android:id="@+id/to_grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="格子布局"
+        android:onClick="toGrid"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_progress"
         app:layout_constraintTop_toBottomOf="@id/to_ck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

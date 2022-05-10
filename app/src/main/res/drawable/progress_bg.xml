@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    <item-->
+    <!--        android:id="@android:id/background"-->
+    <!--        android:drawable="@drawable/white_tm30_4_4" />-->
+    <!--    <item-->
+    <!--        android:id="@+id/progress"-->
+    <!--        android:drawable="@drawable/white_tm60_4_4" >-->
+    <!--    </item >-->
+    <!--    <item android:id="@+id/pattern">-->
+    <!--        <bitmap-->
+    <!--            android:src="@drawable/white_4_4"-->
+    <!--            android:tileMode="repeat" />-->
+    <!--    </item >-->
+
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="2dp" />
+            <gradient
+                android:angle="270"
+                android:centerColor="@color/white_30tm"
+                android:endColor="@color/white_30tm"
+                android:startColor="@color/white_30tm" />
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners android:radius="2dp" />
+                <gradient
+                    android:centerColor="@color/white_60tm"
+                    android:endColor="@color/white_60tm"
+                    android:startColor="@color/white_60tm" />
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

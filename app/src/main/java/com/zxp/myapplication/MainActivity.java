@@ -16,9 +16,12 @@ import com.growingio.android.sdk.collection.GrowingIO;
 import com.zxp.myapplication.ui.ApannableStringActivity;
 import com.zxp.myapplication.ui.ButtonTestActivity;
 import com.zxp.myapplication.ui.CjsTestActivity;
+import com.zxp.myapplication.ui.GridViewActivity;
 import com.zxp.myapplication.ui.PopUpTestActivity;
+import com.zxp.myapplication.ui.ProgressActivity;
 import com.zxp.myapplication.ui.RatingBarTestActivity;
 import com.zxp.myapplication.ui.ScanQrActivity;
+import com.zxp.myapplication.ui.SwitchActivity;
 import com.zxp.myapplication.ui.TestZFlowActivity;
 import com.zxp.myapplication.util.SystemUtils;
 
@@ -49,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
     TextView toSaoyisao;
     @BindView(R.id.to_rating_bar)
     TextView toRatingBar;
+    @BindView(R.id.to_switch)
+    TextView toSwitch;
+    @BindView(R.id.to_progress)
+    TextView toProgress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +66,9 @@ public class MainActivity extends AppCompatActivity {
         GrowingIO.getInstance().setPageName(this, "MainActivity");
     }
 
-    @OnClick({R.id.sslsjl, R.id.app_set, R.id.apannable, R.id.to_popup, R.id.to_ck, R.id.to_cjs,R.id.to_saoyisao, R.id.to_button, R.id.to_rating_bar})
+    @OnClick({R.id.sslsjl, R.id.app_set, R.id.apannable, R.id.to_popup, R.id.to_ck,
+            R.id.to_cjs,R.id.to_saoyisao, R.id.to_button, R.id.to_rating_bar
+            ,R.id.to_switch,R.id.to_progress})
     public void onViewClicked(View view) {
 
         switch (view.getId()) {
@@ -123,6 +132,16 @@ public class MainActivity extends AppCompatActivity {
                 GrowingIO.getInstance().track("ceshi",jsonObject);
                 break;
             }
+            case R.id.to_switch: {
+                Intent intent = new Intent(this, SwitchActivity.class);
+                startActivity(intent);
+                break;
+            }
+            case R.id.to_progress: {
+                Intent intent = new Intent(this, ProgressActivity.class);
+                startActivity(intent);
+                break;
+            }
         }
     }
     @Override
@@ -162,6 +181,12 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         }
+    }
+
+
+    public void toGrid(View view){
+        Intent intent = new Intent(this, GridViewActivity.class);
+        startActivity(intent);
     }
 
 }
