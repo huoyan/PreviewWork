@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ui.TestZFlowActivity">
 
-    <com.zxp.myapplication.view.ClearEditText
+    <com.zxp.cs.view.ClearEditText
         android:id="@+id/autoSearch"
         android:layout_width="0dp"
         android:layout_margin="@dimen/dp_10"
@@ -26,7 +26,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <com.zxp.myapplication.view.ZFlowLayout
+    <com.zxp.cs.view.ZFlowLayout
         android:id="@+id/history_fl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

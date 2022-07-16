@@ -4,19 +4,21 @@ buildscript {
     
     repositories {
 
-        google()
-        mavenCentral()
-        maven { url "https://mvn.mob.com/android" }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/public' }
+//        google()
+//        mavenCentral()
+//        maven { url "https://mvn.mob.com/android" }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
         maven { url 'https://developer.huawei.com/repo/' }
         maven { url "https://jitpack.io" }
 
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:7.1.3'
+        classpath 'com.android.tools.build:gradle:7.0.0'
 
         //埋点插件
         classpath 'com.growingio.android:vds-gradle-plugin:autotrack-2.9.0'
@@ -25,6 +27,8 @@ buildscript {
 //        classpath "com.mob.sdk:MobSDK:2018.0319.1724"
         // 腾讯云
 //        classpath "com.tencent.android.tpns:tpnsplugin:1.2.0"
+        // 腾讯云
+//        classpath "com.tencent.android.tpns:tpnsplugin:1.8.0"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -44,11 +48,11 @@ allprojects {
 ////        maven { url "https://mvn.mob.com/android" }
 //        maven { url 'https://developer.huawei.com/repo/' }
 
-        google()
-        mavenCentral()
-        maven { url 'https://maven.aliyun.com/repository/google' }
-        maven { url 'https://maven.aliyun.com/repository/public' }
-        maven { url 'https://maven.aliyun.com/repository/jcenter' }
+        maven { url 'https://maven.aliyun.com/repository/central' }
+        maven { url 'https://maven.aliyun.com/nexus/content/groups/public/' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/jcenter' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/google' }
+        maven { url 'https://maven.aliyun.com/nexus/content/repositories/gradle-plugin' }
         maven { url 'https://developer.huawei.com/repo/' }
         maven { url "https://jitpack.io" }
     }

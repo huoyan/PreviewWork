@@ -107,5 +107,32 @@
         android:padding="10dp"
         app:layout_constraintLeft_toRightOf="@id/to_progress"
         app:layout_constraintTop_toBottomOf="@id/to_ck" />
+    <TextView
+        android:id="@+id/to_view_pager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="banner"
+        android:onClick="toViewPager"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_grid"
+        app:layout_constraintTop_toBottomOf="@id/to_ck" />
+    <TextView
+        android:id="@+id/to_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="视频播放"
+        android:onClick="toVideo"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/to_view_pager" />
+    <TextView
+        android:id="@+id/to_gallery_viewpager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="画廊布局"
+        android:onClick="toGalleryViewpager"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_video"
+        app:layout_constraintTop_toBottomOf="@id/to_view_pager" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
