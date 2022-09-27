@@ -13,10 +13,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
 import com.growingio.android.sdk.collection.GrowingIO;
+import com.zxp.cs.bean.UserBean;
 import com.zxp.cs.ui.ApannableStringActivity;
 import com.zxp.cs.ui.ButtonTestActivity;
 import com.zxp.cs.ui.CjsTestActivity;
 import com.zxp.cs.ui.GridViewActivity;
+import com.zxp.cs.ui.PeActivity;
 import com.zxp.cs.ui.PopUpTestActivity;
 import com.zxp.cs.ui.ProgressActivity;
 import com.zxp.cs.ui.RatingBarTestActivity;
@@ -202,6 +204,16 @@ public class MainActivity extends AppCompatActivity {
     }
     public void toGalleryViewpager(View view){
         Intent intent = new Intent(this, ViewPagerGallery.class);
+        startActivity(intent);
+    }
+    public void toParcelable(View view){
+        Intent intent = new Intent(this, PeActivity.class);
+        intent.putExtra("Constants.USER_BEAN", new UserBean());
+        intent.putExtra("Constants.FOLLOW", "following");
+//        intent.putExtra("Constants.FOLLOW", following);
+//        intent.putExtra("Constants.BLACK", blacking);
+//        intent.putExtra("Constants.AUTH_STATUS", auth);
+//        intent.putExtra(Constants.IM_FROM_HOME, fromUserHome);
         startActivity(intent);
     }
 
