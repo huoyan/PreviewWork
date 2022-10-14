@@ -24,6 +24,7 @@ import com.zxp.cs.ui.ProgressActivity;
 import com.zxp.cs.ui.RatingBarTestActivity;
 import com.zxp.cs.ui.ScanQrActivity;
 import com.zxp.cs.ui.SwitchActivity;
+import com.zxp.cs.ui.TestGjhActivity;
 import com.zxp.cs.ui.TestZFlowActivity;
 import com.zxp.cs.ui.VideiTestActivity;
 import com.zxp.cs.ui.ViewPagerActivity;
@@ -214,6 +215,10 @@ public class MainActivity extends AppCompatActivity {
 //        intent.putExtra("Constants.BLACK", blacking);
 //        intent.putExtra("Constants.AUTH_STATUS", auth);
 //        intent.putExtra(Constants.IM_FROM_HOME, fromUserHome);
+        startActivity(intent);
+    }
+    public void toGjh(View view){
+        Intent intent = new Intent(this, TestGjhActivity.class);
         startActivity(intent);
     }
 

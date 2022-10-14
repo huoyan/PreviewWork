@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_test">中国</string>
+    <string name="app_gjh">国际化</string>
+</resources>
