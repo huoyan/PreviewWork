@@ -39,6 +39,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
+
     public static int REQUEST_CODE = 0x11;
     @BindView(R.id.sslsjl)
     TextView sslsjl;
