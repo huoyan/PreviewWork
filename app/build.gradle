@@ -53,6 +53,9 @@ android {
 
         resValue("string", "growingio_project_id", "a97716f33e4aaa64")
         resValue("string", "growingio_url_scheme", "growing.57b43c3cb5f2d6dd")
+
+        renderscriptTargetApi 19
+        renderscriptSupportModeEnabled true
     }
     buildTypes {
         release {

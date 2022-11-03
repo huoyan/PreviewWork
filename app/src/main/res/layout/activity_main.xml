@@ -152,5 +152,14 @@
         android:padding="10dp"
         app:layout_constraintLeft_toRightOf="@id/to_parcelable"
         app:layout_constraintTop_toBottomOf="@id/to_view_pager" />
+    <TextView
+        android:id="@+id/to_mh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模糊"
+        android:onClick="toMh"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_gjh"
+        app:layout_constraintTop_toBottomOf="@id/to_view_pager" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

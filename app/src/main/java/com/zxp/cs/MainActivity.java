@@ -18,6 +18,7 @@ import com.zxp.cs.ui.ApannableStringActivity;
 import com.zxp.cs.ui.ButtonTestActivity;
 import com.zxp.cs.ui.CjsTestActivity;
 import com.zxp.cs.ui.GridViewActivity;
+import com.zxp.cs.ui.MhTestActivity;
 import com.zxp.cs.ui.PeActivity;
 import com.zxp.cs.ui.PopUpTestActivity;
 import com.zxp.cs.ui.ProgressActivity;
@@ -220,6 +221,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void toGjh(View view){
         Intent intent = new Intent(this, TestGjhActivity.class);
+        startActivity(intent);
+    }
+    public void toMh(View view){
+        Intent intent = new Intent(this, MhTestActivity.class);
         startActivity(intent);
     }
 

@@ -25,6 +25,13 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:label,android:allowBackup,android:icon,android:theme,android:name">
         <activity
+            android:name=".MhTestActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".TestGjhActivity"
             android:exported="false">
             <meta-data
@@ -81,6 +88,11 @@
             android:windowSoftInputMode="adjustPan|stateHidden" />
         <activity
             android:name=".ui.VideiTestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".ui.MhTestActivity"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:windowSoftInputMode="adjustPan|stateHidden" />

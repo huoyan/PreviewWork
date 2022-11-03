@@ -6,6 +6,7 @@ import android.text.Editable;
 import android.text.SpannableString;
 import android.text.SpannableStringBuilder;
 import android.text.Spanned;
+import android.text.TextPaint;
 import android.text.method.LinkMovementMethod;
 import android.text.style.AbsoluteSizeSpan;
 import android.text.style.BackgroundColorSpan;
@@ -169,6 +170,14 @@ public class ApannableStringActivity extends AppCompatActivity {
             @Override
             public void onClick(View widget) {
                 Toast.makeText(ApannableStringActivity.this, "点击了", Toast.LENGTH_SHORT).show();
+            }
+            //去除连接下划线
+            @Override
+            public void updateDrawState(TextPaint ds) {
+                /**set textColor**/
+                ds.setColor(getColor(R.color.text_black));
+                /**Remove the underline**/
+                ds.setUnderlineText(false);
             }
         };
         ss.setSpan(clickableSpan, 2, 4, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
