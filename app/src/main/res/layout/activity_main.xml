@@ -161,5 +161,14 @@
         android:padding="10dp"
         app:layout_constraintLeft_toRightOf="@id/to_gjh"
         app:layout_constraintTop_toBottomOf="@id/to_view_pager" />
+    <TextView
+        android:id="@+id/to_ss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="展开收缩"
+        android:onClick="toSs"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="@id/to_video"
+        app:layout_constraintTop_toBottomOf="@id/to_video" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
