@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.TextSsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/sise20"
+        android:layout_marginRight="@dimen/sise20"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/shuru"
+            android:layout_width="0dp"
+            android:text="kjjhfkjahfklahfkahsdflkahdsfklhasdklfhaskdfhaklsdhflkashdfklahsdfklhasdklfhaslkdhfkasdhfklasdhfksdhfk"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"></EditText>
+
+        <TextView
+            android:id="@+id/sure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定"
+            android:textSize="18dp"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_14"
+        android:layout_marginLeft="@dimen/sise20"
+        android:layout_marginRight="@dimen/sise20"
+        android:padding="@dimen/sise20"></TextView>
+
+</LinearLayout>
