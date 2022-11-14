@@ -21,9 +21,9 @@ public class FastBlur {
      * @param image   需要模糊的图片
      * @return 模糊处理后的图片
      */
-    public static Bitmap blurBitmap(Context context, Bitmap image, float blurRadius) {
+    public static Bitmap blurBitmap(Context context,int width, Bitmap image, float blurRadius) {
         //创建一个缩小后的bitmap
-        Bitmap inputBitmap = Bitmap.createScaledBitmap(image, 200, 200, false);
+        Bitmap inputBitmap = Bitmap.createScaledBitmap(image, width, 200, false);
         //创建将在ondraw中使用到的经过模糊处理后的bitmap
         Bitmap outputBitmap = Bitmap.createBitmap(inputBitmap);
 

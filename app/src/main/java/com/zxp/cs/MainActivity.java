@@ -27,6 +27,7 @@ import com.zxp.cs.ui.ScanQrActivity;
 import com.zxp.cs.ui.SwitchActivity;
 import com.zxp.cs.ui.TestGjhActivity;
 import com.zxp.cs.ui.TestZFlowActivity;
+import com.zxp.cs.ui.TextSsActivity;
 import com.zxp.cs.ui.VideiTestActivity;
 import com.zxp.cs.ui.ViewPagerActivity;
 import com.zxp.cs.ui.ViewPagerGallery;
@@ -226,6 +227,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void toMh(View view){
         Intent intent = new Intent(this, MhTestActivity.class);
+        startActivity(intent);
+    }
+    public void toSs(View view){
+        Intent intent = new Intent(this, TextSsActivity.class);
         startActivity(intent);
     }
 
