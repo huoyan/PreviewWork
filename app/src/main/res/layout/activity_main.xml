@@ -170,5 +170,14 @@
         android:padding="10dp"
         app:layout_constraintLeft_toLeftOf="@id/to_video"
         app:layout_constraintTop_toBottomOf="@id/to_video" />
+    <TextView
+        android:id="@+id/to_thread_exception"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="线程异常采集测试"
+        android:onClick="toThreadException"
+        android:padding="10dp"
+        app:layout_constraintLeft_toRightOf="@id/to_ss"
+        app:layout_constraintTop_toBottomOf="@id/to_video" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

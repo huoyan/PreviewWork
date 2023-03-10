@@ -28,6 +28,7 @@ import com.zxp.cs.ui.SwitchActivity;
 import com.zxp.cs.ui.TestGjhActivity;
 import com.zxp.cs.ui.TestZFlowActivity;
 import com.zxp.cs.ui.TextSsActivity;
+import com.zxp.cs.ui.ThreadExceptionActivity;
 import com.zxp.cs.ui.VideiTestActivity;
 import com.zxp.cs.ui.ViewPagerActivity;
 import com.zxp.cs.ui.ViewPagerGallery;
@@ -231,6 +232,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void toSs(View view){
         Intent intent = new Intent(this, TextSsActivity.class);
+        startActivity(intent);
+    }
+    public void toThreadException(View view){
+        Intent intent = new Intent(this, ThreadExceptionActivity.class);
         startActivity(intent);
     }
 
